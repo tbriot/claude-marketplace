@@ -1,0 +1,13 @@
+{
+  "name": "tbriot",
+  "owner": {
+    "name": "Thomas Briot"
+  },
+  "plugins": [
+    {
+      "name": "git",
+      "source": "./plugins/git",
+      "description": "Artefacts Claude Code liés à Git (branches, commits, merge requests)"
+    }
+  ]
+}
