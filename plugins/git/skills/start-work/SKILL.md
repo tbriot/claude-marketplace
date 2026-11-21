@@ -23,6 +23,7 @@ The branch name can't be chosen yet since nothing has changed. Create a provisio
 
 ## Rules
 
+- Only run these steps when the user explicitly invokes this skill. Never create, switch or sync branches (including `wip/` ones) on your own initiative, and never replicate these steps manually: when asked to change files, work in the current branch.
 - Never commit or push in this skill.
 - Never mention Claude or any AI assistant anywhere.
 - Be concise: no questions needed.
