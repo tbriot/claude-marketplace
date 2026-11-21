@@ -16,3 +16,9 @@ Personal marketplace of Claude Code plugins.
 Git workflow: branch, commits, push and merge request (squash).
 
 - `/git:ship [description]` — creates a `<type>/<name>` branch, makes small Conventional Commits, pushes, and opens (or updates) the MR/PR.
+
+### `weather`
+
+Weather lookups.
+
+- `/weather:dijon` — current weather in Dijon, France (via wttr.in).
