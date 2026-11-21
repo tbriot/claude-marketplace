@@ -7,7 +7,7 @@
     {
       "name": "git-flow",
       "source": "./plugins/git-flow",
-      "description": "Workflow Git : branche, commits, push et merge request (squash)"
+      "description": "Git workflow: branch, commits, push and merge request (squash)"
     }
   ]
 }

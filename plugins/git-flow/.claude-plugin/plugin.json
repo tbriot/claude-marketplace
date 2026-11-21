@@ -1,7 +1,7 @@
 {
   "name": "git-flow",
   "version": "0.1.0",
-  "description": "Workflow Git : branche, commits, push et merge request (squash)",
+  "description": "Git workflow: branch, commits, push and merge request (squash)",
   "author": {
     "name": "Thomas Briot"
   }
