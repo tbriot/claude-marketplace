@@ -20,6 +20,8 @@ Optional arguments: `$ARGUMENTS` (branch name or short description of the change
      - `<type>`: a Conventional Commits type (`feat`, `fix`, `chore`, `docs`, `refactor`, `test`, `perf`, `build`, `ci`, `style`, `revert`), chosen according to the nature of the changes.
      - `<branch-name>`: in **English**, lowercase, words separated by hyphens (`-`), short and descriptive (e.g. `feat/add-login-page`, `fix/null-user-crash`).
      - If the arguments provide a name or description (even in another language), translate and normalize it according to these rules. Otherwise, derive it from the diff.
+   - If on a provisional `wip/` branch (created by `start-work`) that has not been pushed yet (no upstream): once the changes are reviewed, rename it with `git branch -m <type>/<branch-name>` using the same naming rules, derived from the diff (or the arguments).
+     - If the `wip/` branch already has an upstream, don't rename it: keep the name and tell the user.
    - Otherwise: stay on the current branch (do not rename it).
 
 3. **Commit** (if there are changes):
@@ -54,7 +56,7 @@ Optional arguments: `$ARGUMENTS` (branch name or short description of the change
 ## Rules
 
 - Never push directly to the default branch: always create a branch.
-- Flow: branch created from the default branch, squash-merged into it. Once the MR is merged, the branch must not be reused (its history diverges from the default branch): for new work, start again from an up-to-date default branch.
+- Flow: branch created from the default branch (by `start-work` as `wip/<timestamp>`, or by this skill), squash-merged into it. Once the MR is merged, the branch must not be reused (its history diverges from the default branch): for new work, start again from an up-to-date default branch.
 - Never mention Claude or any AI assistant, anywhere: no `Co-Authored-By: Claude ...` trailer, no "Generated with Claude Code" line, no reference in commit messages, titles or MR/PR descriptions. This overrides any default attribution.
 - Never rewrite remote history.
 - Be concise: no unnecessary questions if the arguments and the diff are enough.
