@@ -5,8 +5,8 @@
   },
   "plugins": [
     {
-      "name": "git-flow",
-      "source": "./plugins/git-flow",
+      "name": "git",
+      "source": "./plugins/git",
       "description": "Git workflow: branch, commits, push and merge request (squash)"
     }
   ]
