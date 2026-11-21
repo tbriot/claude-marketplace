@@ -8,6 +8,11 @@
       "name": "git",
       "source": "./plugins/git",
       "description": "Git workflow: branch, commits, push and merge request (squash)"
+    },
+    {
+      "name": "weather",
+      "source": "./plugins/weather",
+      "description": "Weather lookups"
     }
   ]
 }
