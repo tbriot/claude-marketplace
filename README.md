@@ -4,9 +4,9 @@
 
 ```
 /plugin marketplace add <chemin-ou-repo-github>
-/plugin install git@tbriot
+/plugin install git-flow@tbriot
 ```
 
 ## Plugins
 
-- `git` — artefacts liés à Git (branches, commits, merge requests)
+- `git-flow` — workflow Git : branche, commits, push et merge request (squash)
