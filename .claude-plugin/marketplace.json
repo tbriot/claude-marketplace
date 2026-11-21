@@ -1,0 +1,13 @@
+{
+  "name": "tbriot",
+  "owner": {
+    "name": "Thomas Briot"
+  },
+  "plugins": [
+    {
+      "name": "git",
+      "source": "./plugins/git",
+      "description": "Git workflow: branch, commits, push and merge request (squash)"
+    }
+  ]
+}
