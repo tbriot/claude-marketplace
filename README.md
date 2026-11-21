@@ -17,4 +17,4 @@ Git workflow: branch, commits, push and merge request (squash).
 
 - `/git:start-work` — pulls the default branch and creates a provisional `wip/<timestamp>` branch.
 - `/git:ship [description]` — creates a `<type>/<name>` branch, makes small Conventional Commits, pushes, and opens (or updates) the MR/PR.
-- `/git:clean-branches [--yes]` — deletes local branches whose remote branch no longer exists.
+- `/git:clean-branches` — deletes all local branches whose remote branch no longer exists.
