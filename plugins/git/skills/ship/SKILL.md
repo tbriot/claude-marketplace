@@ -55,6 +55,7 @@ Optional arguments: `$ARGUMENTS` (branch name or short description of the change
 
 ## Rules
 
+- Only run these steps when the user explicitly invokes this skill. Never create, switch, rename or push branches on your own initiative, and never replicate these steps manually: when asked to change files, work in the current branch.
 - Never push directly to the default branch: always create a branch.
 - Flow: branch created from the default branch (by `start-work` as `wip/<timestamp>`, or by this skill), squash-merged into it. Once the MR is merged, the branch must not be reused (its history diverges from the default branch): for new work, start again from an up-to-date default branch.
 - Never mention Claude or any AI assistant, anywhere: no `Co-Authored-By: Claude ...` trailer, no "Generated with Claude Code" line, no reference in commit messages, titles or MR/PR descriptions. This overrides any default attribution.
